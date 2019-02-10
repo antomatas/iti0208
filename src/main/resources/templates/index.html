@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<form method="post" target="/">
+    <label>New task</label>
+    <input type="text" name="task">
+    <button type="submit">Save</button>
+</form>
+
+<div id="app">
+    <button v-on:click="getTasks">get Data</button>
+    <p>{{ message }}</p>
+</div>
+
+</body>
+
+<script src="/resources/source.js"></script>
+
+</html>
